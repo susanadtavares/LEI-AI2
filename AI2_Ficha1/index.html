@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movierise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-left">MOVIERISE</div>
+        <div class="header-right">
+            <button>🔍</button>
+            <button>Sign In</button>
+            <button>Sign Up</button>
+        </div>
+        
+    </header>
+
+    <!-- Slider de Imagens -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="sanandreas.jpg" alt="SanAndreas" class="active">
+            </div>
+            <div class="slide">
+                <img src="fastfurious6.jpg" alt="FastFurious6">
+            </div>
+            <div class="slide">
+                <img src="hiddenfigures.jpg" alt="HiddenFigures">
+            </div>
+            <div class="slide">
+                <img src="interestellar.jpg" alt="Interestellar">
+            </div>
+            <div class="slide">
+                <img src="whiplash.jpg" alt="Whiplash">
+            </div>
+        </div>
+    </section>
+
+    <!-- Filmes em Destaque -->
+    <section id="destaques">
+        <h2>Filmes em Destaque</h2>
+        <div class="nav-menu">
+            <a href="#trending" onclick="showGrid('trending')">Trending</a>
+            <a href="#top-rated" onclick="showGrid('top-rated')">Top Rated</a>
+            <a href="#new-arrivals" onclick="showGrid('new-arrivals')">New Arrivals</a>
+            <a href="#trailers" onclick="showGrid('trailers')">Trailers</a>
+            <a href="#coming-soon" onclick="showGrid('coming-soon')">Coming Soon</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Genre</a>
+                <div class="dropdown-content">
+                    <a href="#action" onclick="showGrid('action')">Action</a>
+                    <a href="#comedy" onclick="showGrid('comedy')">Comedy</a>
+                    <a href="#drama" onclick="showGrid('drama')">Drama</a>
+                    <a href="#horror" onclick="showGrid('horror')">Horror</a>
+                    <a href="#romance" onclick="showGrid('romance')">Romance</a>
+                    <!-- Add more genres as needed -->
+                </div>
+            </div>
+        </div>
+        <div id="trending" class="filmes-grid active">
+            <div class="filme">
+                <img src="harrypotter1.jpg" alt="Destaque 1" title="Sinopse do Filme 1">
+                <p>Sinopse do Filme 1</p>
+            </div>
+            <div class="filme">
+                <img src="hangover.jpg" alt="Destaque 2" title="Sinopse do Filme 2">
+                <p>Sinopse do Filme 2</p>
+            </div>
+            <div class="filme">
+                <img src="karatekid.jpg" alt="Destaque 1" title="Sinopse do Filme 1">
+                <p>Sinopse do Filme 1</p>
+            </div>
+            <div class="filme">
+                <img src="titanic.jpg" alt="Destaque 1" title="Sinopse do Filme 1">
+                <p>Sinopse do Filme 1</p>
+            </div>
+            <div class="filme">
+                <img src="clouds.jpg" alt="Destaque 1" title="Sinopse do Filme 1">
+                <p>Sinopse do Filme 1</p>
+            </div>
+        </div>
+        <div id="top-rated" class="filmes-grid">
+            <div class="filme">
+                <img src="toprated1.jpg" alt="Top Rated 1" title="Sinopse do Filme 1">
+                <p>Sinopse do Filme 1</p>
+            </div>
+            <div class="filme">
+                <img src="toprated2.jpg" alt="Top Rated 2" title="Sinopse do Filme 2">
+                <p>Sinopse do Filme 2</p>
+            </div>
+            <div class="filme">
+                <img src="toprated3.jpg" alt="Top Rated 3" title="Sinopse do Filme 3">
+                <p>Sinopse do Filme 3</p>
+            </div>
+            <div class="filme">
+                <img src="toprated4.jpg" alt="Top Rated 4" title="Sinopse do Filme 4">
+                <p>Sinopse do Filme 4</p>
+            </div>
+            <div class="filme">
+                <img src="toprated5.jpg" alt="Top Rated 5" title="Sinopse do Filme 5">
+                <p>Sinopse do Filme 5</p>
+            </div>
+        </div>
+        <div id="new-arrivals" class="filmes-grid">
+            <div class="filme">
+                <img src="newarrival1.jpg" alt="New Arrival 1" title="Sinopse do Filme 1">
+                <p>Sinopse do Filme 1</p>
+            </div>
+            <div class="filme">
+                <img src="newarrival2.jpg" alt="New Arrival 2" title="Sinopse do Filme 2">
+                <p>Sinopse do Filme 2</p>
+            </div>
+            <div class="filme">
+                <img src="newarrival3.jpg" alt="New Arrival 3" title="Sinopse do Filme 3">
+                <p>Sinopse do Filme 3</p>
+            </div>
+            <div class="filme">
+                <img src="newarrival4.jpg" alt="New Arrival 4" title="Sinopse do Filme 4">
+                <p>Sinopse do Filme 4</p>
+            </div>
+            <div class="filme">
+                <img src="newarrival5.jpg" alt="New Arrival 5" title="Sinopse do Filme 5">
+                <p>Sinopse do Filme 5</p>
+            </div>
+        </div>
+        <div id="trailers" class="filmes-grid">
+            <div class="filme">
+                <img src="trailer1.jpg" alt="Trailer 1" title="Sinopse do Filme 1">
+                <p>Sinopse do Filme 1</p>
+            </div>
+            <div class="filme">
+                <img src="trailer2.jpg" alt="Trailer 2" title="Sinopse do Filme 2">
+                <p>Sinopse do Filme 2</p>
+            </div>
+            <div class="filme">
+                <img src="trailer3.jpg" alt="Trailer 3" title="Sinopse do Filme 3">
+                <p>Sinopse do Filme 3</p>
+            </div>
+            <div class="filme">
+                <img src="trailer4.jpg" alt="Trailer 4" title="Sinopse do Filme 4">
+                <p>Sinopse do Filme 4</p>
+            </div>
+            <div class="filme">
+                <img src="trailer5.jpg" alt="Trailer 5" title="Sinopse do Filme 5">
+                <p>Sinopse do Filme 5</p>
+            </div>
+        </div>
+        <div id="coming-soon" class="filmes-grid">
+            <div class="filme">
+                <img src="comingsoon1.jpg" alt="Coming Soon 1" title="Sinopse do Filme 1">
+                <p>Sinopse do Filme 1</p>
+            </div>
+            <div class="filme">
+                <img src="comingsoon2.jpg" alt="Coming Soon 2" title="Sinopse do Filme 2">
+                <p>Sinopse do Filme 2</p>
+            </div>
+            <div class="filme">
+                <img src="comingsoon3.jpg" alt="Coming Soon 3" title="Sinopse do Filme 3">
+                <p>Sinopse do Filme 3</p>
+            </div>
+            <div class="filme">
+                <img src="comingsoon4.jpg" alt="Coming Soon 4" title="Sinopse do Filme 4">
+                <p>Sinopse do Filme 4</p>
+            </div>
+            <div class="filme">
+                <img src="comingsoon5.jpg" alt="Coming Soon 5" title="Sinopse do Filme 5">
+                <p>Sinopse do Filme 5</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p> Copyright &copy; 2025 Movierise. All right reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
